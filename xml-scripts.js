@@ -74,7 +74,7 @@ function setQuotesHandler () {
 function requestQuotes () {
     $.ajax({
         //==== Settings 
-        url : 'https://smileschool-api.hbtn.info/xml/quotes',
+        url : 'https://smileschool-api.hbtn.info/quotes',
         type : 'GET',
         dataType : 'json',
 
@@ -146,7 +146,7 @@ function setQuotes (json) {
 function mostPopularTutorialsRequest () {
     $.ajax({
         //==== Settings 
-        url : 'https://smileschool-api.hbtn.info/xml/popular-tutorials',
+        url : 'https://smileschool-api.hbtn.info/popular-tutorials',
         type : 'GET',
         dataType : 'json',
 
@@ -171,7 +171,7 @@ function mostPopularTutorialsRequest () {
 function latestVideosRequest() {
     $.ajax({
         //==== Settings 
-        url : 'https://smileschool-api.hbtn.info/xml/latest-videos',
+        url : 'https://smileschool-api.hbtn.info/latest-videos',
         type : 'GET',
         dataType : 'json',
 
@@ -220,7 +220,7 @@ function onchangeSortBy() {
 function searchVideosRequest() {
     $.ajax({
         //==== Settings 
-        url : 'https://smileschool-api.hbtn.info/xml/courses',
+        url : 'https://smileschool-api.hbtn.info/courses',
         data: { 
             q: $('#keyword').val(),
             topic: $('#topic').val(),
